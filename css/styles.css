@@ -19,7 +19,7 @@ body {
   width: 80%;
   height: 80vh;
   display: flex;
-  box-shadow: 5px 5px 10px rgba(0,0,0,.212);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .212);
 }
 
 .form-header {
@@ -29,14 +29,14 @@ body {
 }
 
 .form-header h1::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #6c63ff;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #6c63ff;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
 }
 
 .input-group {
@@ -68,7 +68,7 @@ body {
   outline: 1px solid #6c63ff;
 }
 
-.input-box label, 
+.input-box label,
 .gender-title h6 {
   font-size: 0.75rem;
   font-weight: 600;
@@ -104,7 +104,7 @@ body {
 .continue-button button {
   width: 100%;
   margin-top: 2.5rem;
-  background-color:#6c63ff;
+  background-color: #6c63ff;
   padding: 0.62rem;
   border-radius: 5px;
   cursor: pointer;
@@ -114,11 +114,12 @@ body {
   background-color: #6b63fff1;
 }
 
-
-
-
-
-
+.continue-button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
 
 .login-btn {
   display: flex;
@@ -167,18 +168,20 @@ body {
   padding: 3rem;
 }
 
-#menu-h {
+.menu-h {
+  width: 100%;
+  justify-content: center;
   list-style: none;
   padding: 0;
   background-color: #FFFFFF;
 }
 
 
-#menu-h li {
+.menu-h li {
   display: inline;
 }
 
-#menu-h li a {
+.menu-h li a {
   text-decoration: none;
   color: black;
   padding: 20px;
@@ -187,17 +190,61 @@ body {
 
 }
 
-#menu-h li a:hover {
+.menu-h li a:hover {
   background-color: #f9c022;
 }
 
-#menu-h ul li:first-child {
+.menu-h ul li:first-child {
   float: left;
 }
 
-#menu-h ul li:last-child {
+.menu-h ul li:last-child {
   float: right;
-  background-color: rgb(24, 139, 233);
+  background-color: #f9c022;
+}
+
+.menu-h ul li:last-child:hover {
+  background-color: #995973;
+  transition: background .3s;
 }
 
 
+.id-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+
+.id-input {
+  display: flex;
+  align-items: center;
+}
+
+.id-input input {
+  margin-right: 0.35rem;
+}
+
+.id-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.id-title {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1655px) {
+  .form-img {
+    display: none;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
