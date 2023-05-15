@@ -69,11 +69,10 @@ body {
 }
 
 .container {
-  background-color: #333;
-  border: 3px solid red;
   padding: 15px;
   display: grid;
   gap: 5px;
+  margin-left: 10px;
   grid-template-areas: 
    'mapa mapa mapa'
    'lista-ongs lista-ongs lista-ongs'
@@ -82,8 +81,6 @@ body {
 .mapa {
   grid-area: mapa;
   width: auto;
-  border: 1px solid blue;
-  background-color: #995973;
 }
 
 .mapa iframe {
@@ -93,14 +90,5 @@ body {
 .lista-ongs {
   grid-area: lista-ongs;
   width: 100%;
-  border: 1px solid green;
-  background-color: aquamarine;
   text-align: center;
-}
-
-.redes-sociais {
-  grid-area: redes-sociais;
-  width: auto;
-  border: 1px solid brown;
-  background-color: yellow;
 }
