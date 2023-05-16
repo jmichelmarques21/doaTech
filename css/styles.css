@@ -8,14 +8,25 @@
 }
 
 body {
-  width: 100%;
+  width: 80%;
   height: 100vh;
   display: flex;
   justify-content: center;
   background-color: #fff;
 }
 
+.lista-ongs {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lista-ongs a {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
+  margin-top: 30px;
   width: 80%;
   height: 80vh;
   display: flex;

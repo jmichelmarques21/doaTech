@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200,300,400,50,600&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100,200,300,400,50,600&family=Open+Sans&display=swap');
 
 * {
   margin: 0 auto;
@@ -8,7 +8,7 @@
 }
 
 body {
-  width: 95%;
+  width: 100%;
   height: 100vh;
 }
 
@@ -74,23 +74,20 @@ body {
   gap: 5px;
   margin-left: 10px;
   grid-template-areas: 
-   'mapa mapa mapa'
-   'lista-ongs lista-ongs lista-ongs'
+   'foto-rango foto-rango texto-rango'
+   'foto1 foto1 foto2'
+   'foto3 foto3 foto4'
 }
 
-.mapa {
-  grid-area: mapa;
+.foto-rango {
+  grid-area: foto-rango;
   width: auto;
 }
 
-.mapa iframe {
-  transition: width 1s;
-}
-
-.lista-ongs {
-  grid-area: lista-ongs;
+.texto-rango {
+  grid-area: texto-rango;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .lista-ongs a {
@@ -98,3 +95,28 @@ body {
   color: black;
 }
 
+.texto-rango h1 {
+  text-transform: Uppercase;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+.foto1 {
+  grid-area: foto1;
+}
+
+.foto2 {
+  grid-area: foto2;
+}
+
+.foto3 {
+  grid-area: foto3;
+}
+
+.foto4 {
+  grid-area: foto4;
+}
+
+.fotos-rango {
+  width: 50vh;
+}
